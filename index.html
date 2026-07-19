@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIUS | Barbearia Moderna de Luxo</title>
+    
+    <!-- Tags Meta para SEO -->
+    <meta name="description" content="Experimente cortes de precisão, cuidados masculinos de luxo e estilo atemporal na Aurelius, uma barbearia premium projetada para o cavalheiro moderno. Reserve seu horário hoje.">
+    <meta name="keywords" content="barbearia de luxo, cavalheiro moderno, corte de cabelo premium, barba com toalha quente, cuidados com a barba, barbearia Aurelius">
+    <meta name="author" content="AURELIUS">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AURELIUS | Barbearia Moderna de Luxo">
+    <meta property="og:description" content="Experimente cortes de precisão, cuidados masculinos de luxo e estilo atemporal na Aurelius.">
+    <meta property="og:image" content="assets/about_interior.png">
+    
+    <!-- Fonts - Satoshi and Clash Display via Fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    
+    <!-- Preload first Hero Image for performance -->
+    <link rel="preload" href="barberpole/Barber_pole_rotating_on_wall_202607181138_000.jpg" as="image">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Background Accents (Subtle Glows & Gradients) -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- Cabeçalho de Navegação -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                AURELIUS
+                <span class="logo-sub">BARBEIROS</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#barbers" class="nav-link">Barbeiros</a>
+                <a href="#gallery" class="nav-link">Galeria</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#pricing" class="nav-link">Preços</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-nav-cta btn-hover-effect">Agendar Agora</a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Alternar Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação Celular -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#hero" class="mobile-link">Início</a>
+            <a href="#about" class="mobile-link">Sobre</a>
+            <a href="#services" class="mobile-link">Serviços</a>
+            <a href="#barbers" class="mobile-link">Barbeiros</a>
+            <a href="#gallery" class="mobile-link">Galeria</a>
+            <a href="#testimonials" class="mobile-link">Depoimentos</a>
+            <a href="#pricing" class="mobile-link">Preços</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contato</a>
+            <a href="#contact" class="btn btn-gold btn-hover-effect mobile-cta">Agendar Horário</a>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Seção Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-split">
+                <!-- Lado Esquerdo de Conteúdo -->
+                <div class="hero-left">
+                    <div class="hero-content-wrapper">
+                        <span class="hero-label animate-fade-in">EXPERIÊNCIA DE CUIDADOS PREMIUM</span>
+                        <h1 class="hero-headline animate-text-reveal">
+                            BARBEARIA<br>
+                            <span class="accent-text">MODERNA</span>
+                        </h1>
+                        <p class="hero-desc animate-fade-in-delayed">
+                            Experimente cortes de precisão, cuidados de luxo e estilo atemporal projetados para o cavalheiro moderno. Redefinimos os cuidados masculinos com excelência artesanal mundial.
+                        </p>
+                        <div class="hero-ctas animate-fade-in-delayed">
+                            <a href="#contact" class="btn btn-gold btn-hover-effect">Agendar Horário &rarr;</a>
+                            <a href="#services" class="btn btn-outline btn-hover-effect">Ver Serviços</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lado Direito dos Slides -->
+                <div class="hero-right">
+                    <div class="hero-slideshow-container" id="hero-slideshow">
+                        <!-- Slides dinâmicos serão inseridos por JS aqui -->
+                    </div>
+                    <div class="hero-gradient-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content animate-reveal">
+                        <span class="section-label">A ARTE DO OFÍCIO</span>
+                        <h2 class="section-title">ARTE ATEMPORAL & PRECISÃO</h2>
+                        <div class="divider"></div>
+                        <p class="about-text">
+                            A Aurelius Barbershop não é apenas um lugar para cortar o cabelo; é um santuário de cuidados masculinos de luxo onde métodos tradicionais se fundem com o estilo contemporâneo. Fundada na busca da perfeição absoluta, tratamos cada serviço como uma verdadeira obra de arte nos detalhes.
+                        </p>
+                        <p class="about-text-secondary">
+                            Nossa equipe de mestres barbeiros é dedicada a elevar sua confiança através de uma estética marcante, execução meticulosa e os melhores produtos de cuidados masculinos. Entre na Aurelius e experimente o ápice dos cuidados masculinos.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-title">PRECISÃO</span>
+                                <span class="feature-desc">Cortes & Contornos Sob Medida</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">PREMIUM</span>
+                                <span class="feature-desc">Rituais de Barbear de Luxo</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">ELITE</span>
+                                <span class="feature-desc">Barbeiros Experientes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image-wrapper animate-reveal">
+                        <div class="image-inner">
+                            <img src="assets/about_interior.png" alt="Interior da Barbearia de Luxo Aurelius" class="img-responsive hover-zoom-img">
+                        </div>
+                        <div class="about-image-badge">
+                            <span class="badge-num">15+</span>
+                            <span class="badge-txt">Anos de Excelência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section class="services section-padding" id="services">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">SERVIÇOS EXCLUSIVOS</span>
+                    <h2 class="section-title">NOSSOS SERVIÇOS DE LUXO</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <!-- Custom Razor SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="gold-svg">
+                                <path d="M3 22l6.2-6.2M9 13.8L13.8 9M18 4l2.8 2.8c.8.8.8 2 0 2.8L12.4 18c-.8.8-2 .8-2.8 0L6.8 15.2c-.8-.8-.8-2 0-2.8L15.2 4c.8-.8 2-.8 2.8 0z" />
+                                <path d="M14 6l4 4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Corte Simples</h3>
+                        <p class="service-desc">Corte de cabelo tradicional com máquina ou tesoura, focado na praticidade e no estilo clássico do dia a dia.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <!-- Custom Beard SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="gold-svg">
+                                <path d="M4 3h16M7 3v4c0 3 2 5 5 5s5-2 5-5V3" />
+                                <path d="M12 12v6c0 2-2 4-4 4M12 18h4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Barba Simples</h3>
+                        <p class="service-desc">Aparado básico, alinhamento dos contornos com lâmina e ajuste de comprimento com máquina.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <!-- Custom Razor SVG (Hot Towel Shave SVG) -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="gold-svg">
+                                <path d="M12 2v20M2 12h20M5.6 5.6l12.8 12.8M5.6 18.4L18.4 5.6" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Sobrancelha na Navalha</h3>
+                        <p class="service-desc">Limpeza rápida e alinhamento do contorno das sobrancelhas utilizando navalha descartável tradicional.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Serviço 4 -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <!-- Combo SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="gold-svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M21 12H3M12 3v18" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Acabamento / Pezinho</h3>
+                        <p class="service-desc">Limpeza rápida apenas das linhas de contorno do cabelo no pescoço e costeletas para manter o visual limpo.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Serviço 5 -->
+                    <div class="service-card animate-reveal protese-card" id="protese-card">
+                        <div class="service-icon">
+                            <!-- Diamond / Crown SVG for Pinnacle -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="gold-svg">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Prótese Capilar</h3>
+                        <p class="service-desc"><strong>O auge da nossa barbearia!</strong> Aplicação, corte e estilização de prótese capilar personalizada. Devolva sua autoestima com naturalidade total. <span style="color: var(--accent-color); font-weight: bold; cursor: pointer; display: inline-block; margin-top: 5px;">(Clique para detalhes)</span></p>
+                        <div class="card-border-glow"></div>
+
+                        <!-- Balão com abas sobre a prótese -->
+                        <div class="protese-balloon" id="protese-balloon" role="dialog" aria-label="Detalhes da Prótese Capilar">
+                            <button class="balloon-close" id="protese-balloon-close" aria-label="Fechar Balão">&times;</button>
+                            <div class="balloon-header">
+                                <h4>Prótese Capilar Premium</h4>
+                                <span class="balloon-tagline">O Auge do Resgate da Autoestima</span>
+                            </div>
+                            
+                            <!-- Abas individuais -->
+                            <div class="balloon-tabs">
+                                <button class="tab-btn active" data-tab="info">O que é</button>
+                                <button class="tab-btn" data-tab="manutencao">Manutenção</button>
+                                <button class="tab-btn" data-tab="vida">Vida Normal</button>
+                            </div>
+                            
+                            <!-- Conteúdo das abas -->
+                            <div class="balloon-content">
+                                <div class="tab-content active" id="tab-info">
+                                    <p>Uma película ultrafina de micropele ou tela respirável com fios de cabelo 100% naturais implantados um a um.</p>
+                                    <p>Ela é fixada de forma segura na área calva, integrando-se perfeitamente com seu próprio cabelo para um visual invisível e natural.</p>
+                                </div>
+                                <div class="tab-content" id="tab-manutencao">
+                                    <p>A manutenção deve ser realizada a cada <strong>15 a 21 dias</strong> em nossa barbearia.</p>
+                                    <p>Nesse processo, retiramos a prótese, higienizamos o couro cabeludo, aplicamos novos adesivos especiais dermatologicamente testados e reajustamos o corte.</p>
+                                </div>
+                                <div class="tab-content" id="tab-vida">
+                                    <p>A fixação é extremamente resistente e à prova d'água. Você pode:</p>
+                                    <ul>
+                                        <li>✓ Tomar banho de chuveiro diário</li>
+                                        <li>✓ Entrar na piscina ou no mar</li>
+                                        <li>✓ Praticar esportes intensos</li>
+                                        <li>✓ Dormir confortavelmente</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Seção de Barbeiros -->
+        <section class="barbers section-padding" id="barbers">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">CONHEÇA OS ARTESÃOS</span>
+                    <h2 class="section-title">NOSSOS MESTRES BARBEIROS</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="barbers-grid">
+                    <!-- Barbeiro 1 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/barber_1.png" alt="Mestre Barbeiro Marcos Silva" class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"A precisão é um compromisso, não um acidente."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Marcos Silva</h3>
+                            <span class="barber-role">Fundador & Barbeiro Master</span>
+                        </div>
+                    </div>
+
+                    <!-- Barbeiro 2 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/barber_2.png" alt="Barbeiro Sênior Thiago Souza" class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"Um ótimo corte constrói uma confiança inabalável."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Thiago Souza</h3>
+                            <span class="barber-role">Especialista Sênior em Cuidados Masculinos</span>
+                        </div>
+                    </div>
+
+                    <!-- Barbeiro 3 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/barber_3.png" alt="Mestre da Navalha Alexandre Lima" class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"A navalha é uma forma de arte que exige paciência."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Alexandre Lima</h3>
+                            <span class="barber-role">Mestre Artesão da Navalha</span>
+                        </div>
+                    </div>
+
+                    <!-- Barbeiro 4 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/barber_4.png" alt="Barbeiro Lucas Oliveira" class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"Cada corte é único, desenhado para destacar a sua identidade."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Lucas Oliveira</h3>
+                            <span class="barber-role">Especialista em Degradê & Freestyle</span>
+                        </div>
+                    </div>
+
+                    <!-- Barbeiro 5 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/barber_5.png" alt="Barbeiro Felipe Ramos" class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"Cuidar da barba vai além do visual, é um momento de bem-estar."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Felipe Ramos</h3>
+                            <span class="barber-role">Especialista em Barboterapia & Visagismo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria -->
+        <section class="gallery section-padding" id="gallery">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">PORTFÓLIO VISUAL</span>
+                    <h2 class="section-title">A GALERIA</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="gallery-grid-masonry">
+                    <div class="gallery-item item-vertical animate-reveal" data-img="assets/about_interior.png">
+                        <img src="assets/about_interior.png" alt="Salão de Luxo" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Imagem</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-reveal" data-img="assets/gallery_1.png">
+                        <img src="assets/gallery_1.png" alt="Detalhe de Contorno com Navalha" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Imagem</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-reveal" data-img="assets/gallery_2.png">
+                        <img src="assets/gallery_2.png" alt="Produtos de Cuidados Premium" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Imagem</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-horizontal animate-reveal" data-img="assets/gallery_3.png">
+                        <img src="assets/gallery_3.png" alt="Barbear com Toalha Quente Cinematográfico" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Imagem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox da Galeria em Tela Cheia -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Fechar Galeria">&times;</button>
+            <div class="lightbox-content">
+                <img src="" alt="Foto da galeria ampliada" id="lightbox-img">
+            </div>
+        </div>
+
+        <!-- Seção de Depoimentos -->
+        <section class="testimonials section-padding" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">AVALIAÇÕES DOS CLIENTES</span>
+                    <h2 class="section-title">A REPUTAÇÃO</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="testimonial-slider-container animate-reveal">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A atenção aos detalhes na Aurelius é inigualável. O Marcus dedica o tempo necessário e entrega um corte verdadeiramente personalizado para a minha estrutura facial. O barbear com toalha quente foi um ritual incrivelmente relaxante. Luxo absoluto."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Vincent Sterling</h4>
+                                <span class="client-occupation">Diretor Criativo</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A Aurelius é uma obra-prima. O design em madeira escura e couro, combinado com uma trilha sonora ambiente suave, cria um ambiente de elite. O Dominic desenha minha barba perfeitamente todas as vezes. Altamente recomendado."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Julian Vance</h4>
+                                <span class="client-occupation">Sócio de Investimentos</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "O agendamento online foi perfeito e o serviço foi exatamente no horário. Fazer a barba com o Alexander é como presenciar uma forma de arte em extinção. É preciso, limpo e extremamente reconfortante. Equipe altamente profissional."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Gabriel Thorne</h4>
+                                <span class="client-occupation">Arquiteto</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 4 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Espaço sofisticado e profissionais que realmente entendem do assunto. O corte de cabelo superou minhas expectativas e o atendimento foi excelente."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Arthur Pendelton</h4>
+                                <span class="client-occupation">Empresário</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 5 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "O atendimento com hora marcada é rigoroso e o ambiente é perfeito para relaxar após um dia tenso de trabalho. Recomendo muito."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Bernardo Costa</h4>
+                                <span class="client-occupation">Analista Financeiro</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 6 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Excelente trabalho com a toalha quente e o alinhamento da barba. A precisão no contorno com navalha deles é incomparável."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Carlos Eduardo</h4>
+                                <span class="client-occupation">Fotógrafo</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 7 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Minha primeira vez na Aurelius e já virei cliente fiel. O design do espaço é impecável e a recepção foi extremamente calorosa."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Daniel Lima</h4>
+                                <span class="client-occupation">Engenheiro</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 8 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Marcus Vance é um verdadeiro mestre do estilo. O corte assinatura vale cada centavo pelo nível extraordinário de cuidado e capricho."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Eduardo Ramos</h4>
+                                <span class="client-occupation">Consultor</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 9 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A facilidade de agendar online economiza muito tempo na minha rotina. E a massagem capilar durante a lavagem é simplesmente espetacular."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Felipe Souza</h4>
+                                <span class="client-occupation">Desenvolvedor</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 10 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Atendimento impecável e produtos importados premium. Sinto minha pele e barba muito mais bem tratadas depois que comecei a frequentar."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Gustavo Santos</h4>
+                                <span class="client-occupation">Advogado</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 11 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A trilha sonora jazz ambiente e a decoração clássica em couro criam uma atmosfera única. O ritual com toalha quente é fantástico."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Henrique Oliveira</h4>
+                                <span class="client-occupation">Arquiteto</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 12 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Pontualidade britânica e profissionais muito qualificados. O Dominic é incrivelmente detalhista no contorno da minha barba."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Igor Martins</h4>
+                                <span class="client-occupation">Médico</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 13 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A Aurelius elevou completamente meu padrão de barbearia. O degradê do corte deles tem uma precisão cirúrgica impecável."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Jonas Valente</h4>
+                                <span class="client-occupation">Designer de Produto</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 14 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "A hidratação da pele facial e a esfoliação com carvão são incríveis. Rejuvenesce o visual e relaxa a mente de uma forma incrível."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Leonardo Ferreira</h4>
+                                <span class="client-occupation">Professor</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 15 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "O combo cabelo e barba deles é excelente. A gente entra estressado e cansado e sai renovado, pronto para qualquer reunião de negócios."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Mateus Alencar</h4>
+                                <span class="client-occupation">Publicitário</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 16 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Além da qualidade técnica excelente, o café expresso cortesia e a conversa de alto nível fazem de lá meu refúgio favorito de cuidados."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Nicolas Rocha</h4>
+                                <span class="client-occupation">Empresário</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 17 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Fazer a barba tradicional com navalha com o Alexander Croft é como presenciar arte antiga em execução. Meticuloso e muito suave."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Otávio Augusto</h4>
+                                <span class="client-occupation">Gestor de Projetos</span>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 18 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Ambiente extremamente reservado, limpo e sofisticado. Sem dúvidas, a melhor experiência de barbearia de luxo que existe."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Pedro Henrique</h4>
+                                <span class="client-occupation">Jornalista</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles dos Slides -->
+                    <div class="testimonial-controls">
+                        <button class="ctrl-btn ctrl-prev" id="prev-testi" aria-label="Depoimento Anterior">
+                            &larr;
+                        </button>
+                        <div class="testimonial-dots" id="testimonial-dots">
+                            <!-- Gerado dinamicamente via JS -->
+                        </div>
+                        <button class="ctrl-btn ctrl-next" id="next-testi" aria-label="Próximo Depoimento">
+                            &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Tabela de Preços -->
+        <!-- Seção de Tabela de Serviços -->
+        <section class="pricing section-padding" id="pricing">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">NOSSOS SERVIÇOS</span>
+                    <h2 class="section-title">NOSSO CARDÁPIO DE SERVIÇOS</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="pricing-grid animate-reveal">
+                    <!-- Coluna 1 -->
+                    <div class="pricing-column">
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Corte Simples</span>
+                            </div>
+                            <p class="price-desc">Corte tradicional clássico na tesoura ou máquina.</p>
+                        </div>
+                        
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Barba Simples</span>
+                            </div>
+                            <p class="price-desc">Aparado básico de comprimento e ajuste de contornos.</p>
+                        </div>
+
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Combo Corte & Barba</span>
+                            </div>
+                            <p class="price-desc">O pacote clássico para cuidar do cabelo e da barba de uma vez.</p>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2 -->
+                    <div class="pricing-column">
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Sobrancelha na Navalha</span>
+                            </div>
+                            <p class="price-desc">Limpeza rápida e definição de contornos das sobrancelhas.</p>
+                        </div>
+
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Acabamento / Pezinho</span>
+                            </div>
+                            <p class="price-desc">Limpeza apenas da linha de pescoço e costeletas.</p>
+                        </div>
+
+                        <div class="pricing-item">
+                            <div class="pricing-title-row">
+                                <span class="price-name">Prótese Capilar (O Auge)</span>
+                            </div>
+                            <p class="price-desc">Aplicação e personalização profissional de prótese capilar para naturalidade máxima.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de FAQ (Perguntas Frequentes) -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">ESCLARECENDO SUAS DÚVIDAS</span>
+                    <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="faq-accordion-wrapper animate-reveal">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Vocês aceitam clientes sem agendamento (walk-in)?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Para garantir uma experiência de luxo definitiva e sem pressa para cada cliente, trabalhamos principalmente com agendamento prévio. No entanto, aceitamos clientes sem agendamento se algum barbeiro tiver disponibilidade espontânea. Recomendamos fortemente agendar online com antecedência para garantir seu horário.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Qual é a política de cancelamento?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Valorizamos o tempo dos nossos mestres barbeiros. Exigimos um aviso prévio mínimo de 24 horas para cancelamentos ou alterações de horário. Cancelamentos feitos em menos de 24 horas antes do horário agendado podem estar sujeitos a uma taxa de cancelamento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Que tipo de produtos vocês usam?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Utilizamos apenas produtos orgânicos de elite e alto padrão, formulados especificamente para cabelo e pele masculina. Isso inclui óleos essenciais personalizados, pomadas sem álcool e higienizadores faciais botânicos especializados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Posso agendar com um barbeiro específico?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Com certeza. Nosso sistema de agendamento permite que você selecione seu barbeiro de preferência (Marcos, Thiago, Alexandre, Lucas ou Felipe) ao agendar seus serviços. Se não tiver preferência, você pode escolher "Primeiro Disponível".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Chamada para Agendamento -->
+        <section class="booking-cta section-padding" id="booking-cta">
+            <div class="booking-cta-bg-layer"></div>
+            <div class="container text-center relative z-2">
+                <div class="animate-reveal">
+                    <span class="section-label gold-accent-label">GARANTA SUA EXPERIÊNCIA</span>
+                    <h2 class="cta-headline">ELEVE SEU ESTILO</h2>
+                    <p class="cta-subtitle">Entre como convidado, saia com confiança. Experimente o cuidado masculino do jeito certo.</p>
+                    <a href="#contact" class="btn btn-gold btn-large btn-hover-effect">Agende Seu Horário</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato e Agendamento -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Esquerda: Formulário -->
+                    <div class="contact-form-container animate-reveal">
+                        <span class="section-label">AGENDAMENTO ONLINE</span>
+                        <h2 class="section-title">AGENDAR SERVIÇO</h2>
+                        <div class="divider"></div>
+                        
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name">Nome Completo</label>
+                                    <input type="text" id="client-name" name="name" placeholder="João Silva" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone">Número de Telefone</label>
+                                    <input type="tel" id="client-phone" name="phone" placeholder="(11) 99999-9999" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="select-service">Serviço</label>
+                                    <select id="select-service" name="service" required>
+                                        <option value="" disabled selected>Escolha um serviço</option>
+                                        <option value="haircut">Corte Simples</option>
+                                        <option value="beard">Barba Simples</option>
+                                        <option value="combo">Combo Corte & Barba</option>
+                                        <option value="pezinho">Acabamento / Pezinho</option>
+                                        <option value="sobrancelha">Sobrancelha na Navalha</option>
+                                        <option value="protese">Prótese Capilar (O Auge)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="select-barber">Barbeiro</label>
+                                    <select id="select-barber" name="barber" required>
+                                        <option value="" disabled selected>Selecionar Barbeiro</option>
+                                        <option value="any">Primeiro Barbeiro Disponível</option>
+                                        <option value="marcos">Marcos Silva</option>
+                                        <option value="thiago">Thiago Souza</option>
+                                        <option value="alexandre">Alexandre Lima</option>
+                                        <option value="lucas">Lucas Oliveira</option>
+                                        <option value="felipe">Felipe Ramos</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date">Data</label>
+                                    <input type="date" id="booking-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time">Horário de Preferência</label>
+                                    <select id="booking-time" name="time" required>
+                                        <option value="" disabled selected>Escolha o horário</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold btn-block btn-hover-effect">Enviar Solicitação de Agendamento</button>
+                        </form>
+                        
+                        <!-- Mensagem de sucesso (Toast) -->
+                        <div class="booking-success-message" id="booking-success">
+                            <span class="success-icon">✓</span>
+                            <div>
+                                <h4>Agendamento Solicitado</h4>
+                                <p>Recebemos sua solicitação. Um e-mail de confirmação foi enviado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direita: Informações -->
+                    <div class="contact-info-container animate-reveal">
+                        <span class="section-label">ONDE ESTAMOS</span>
+                        <h2 class="section-title">A LOCALIZAÇÃO</h2>
+                        <div class="divider"></div>
+
+                        <div class="info-block">
+                            <h4>Endereço</h4>
+                            <p>Avenida do Luxo, 742, Sala 100<br>Metropolis, NY 10001</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>Horário de Funcionamento</h4>
+                            <p class="hours-row"><span>Segunda - Sexta</span> <span>09:00 às 20:00</span></p>
+                            <p class="hours-row"><span>Sábado</span> <span>09:00 às 18:00</span></p>
+                            <p class="hours-row"><span>Domingo</span> <span class="closed-label">Fechado</span></p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>Contatos Diretos</h4>
+                            <p>Telefone: <a href="tel:+12125550199" class="gold-link">+1 (212) 555-0199</a></p>
+                            <p>E-mail: <a href="mailto:appointments@aureliusbarbers.com" class="gold-link">appointments@aureliusbarbers.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Logo & Slogan -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">AURELIUS</h3>
+                    <p class="footer-tagline">Criando confiança atemporal e detalhes de estilo modernos desde 2011.</p>
+                </div>
+                
+                <!-- Coluna 2: Links -->
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#barbers">Barbeiros</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Links Secundários -->
+                <div class="footer-nav">
+                    <h4>Legal & Confiança</h4>
+                    <ul>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#pricing">Tabela de Preços</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Redes Sociais -->
+                <div class="footer-social">
+                    <h4>Siga a Aurelius</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram" class="social-icon">IN</a>
+                        <a href="#" aria-label="Facebook" class="social-icon">FB</a>
+                        <a href="#" aria-label="Twitter" class="social-icon">TW</a>
+                        <a href="#" aria-label="Pinterest" class="social-icon">PT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AURELIUS Barbershop. Todos os Direitos Reservados. Projetado para um estilo premium.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animações GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lógica de Aplicação Personalizada -->
+    <script src="app.js"></script>
+</body>
+</html>
